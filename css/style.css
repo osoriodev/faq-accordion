@@ -1,3 +1,15 @@
+:root {
+  --clr-primary: #AF67E9;
+  --clr-secondary: #6565E7;
+  --clr-tertiary: #F47C57;
+  --clr-base: #4A4B5E;
+  --clr-base-lt: #787887;
+  --clr-base-dk: #1D1E35;
+  --clr-helper: #E7E7E9;
+  --clr-ntrl-min: #000;
+  --clr-ntrl-max: #FFF;
+  --ff-primary: 'Kumbh Sans', sans-serif;
+}
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -8,6 +20,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  font-family: var(--ff-primary);
   font-size: 1.6rem;
   line-height: 1.3;
 }
