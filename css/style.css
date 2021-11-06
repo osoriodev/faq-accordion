@@ -133,11 +133,81 @@ a {
   overflow: hidden;
   margin-block-end: 1.4rem;
   border-block-end: .1rem solid var(--clr-helper);
-  transition: max-height .5s ease-in-out .1s;
+  transition: max-height .4s ease-in-out;
 }
 .faq__answer {
   padding-block-end: 1.4rem;
   font-size: 1.2rem;
   text-align: start;
   color: var(--clr-base-lt);
+}
+/* ========== CHECK EVENTS ========== */
+#op1:checked ~ .faq__answer-wrap--one {
+  max-height: 10rem;
+}
+#op1:checked ~ .faq__question--one .faq__label {
+  font-weight: 700;
+  color: var(--clr-base-dk);
+}
+#op1:checked ~ .faq__question--one .faq__label i {
+  transform: rotate(180deg);
+}
+#op1:checked ~ .faq__question--one .faq__hide-btn {
+  display: block;
+}
+
+#op2:checked ~ .faq__answer-wrap--two {
+  max-height: 10rem;
+}
+#op2:checked ~ .faq__question--two .faq__label {
+  font-weight: 700;
+  color: var(--clr-base-dk);
+}
+#op2:checked ~ .faq__question--two .faq__label i {
+  transform: rotate(180deg);
+}
+#op2:checked ~ .faq__question--two .faq__hide-btn {
+  display: block;
+}
+
+#op3:checked ~ .faq__answer-wrap--three {
+  max-height: 10rem;
+}
+#op3:checked ~ .faq__question--three .faq__label {
+  font-weight: 700;
+  color: var(--clr-base-dk);
+}
+#op3:checked ~ .faq__question--three .faq__label i {
+  transform: rotate(180deg);
+}
+#op3:checked ~ .faq__question--three .faq__hide-btn {
+  display: block;
+}
+
+#op4:checked ~ .faq__answer-wrap--four {
+  max-height: 10rem;
+}
+#op4:checked ~ .faq__question--four .faq__label {
+  font-weight: 700;
+  color: var(--clr-base-dk);
+}
+#op4:checked ~ .faq__question--four .faq__label i {
+  transform: rotate(180deg);
+}
+#op4:checked ~ .faq__question--four .faq__hide-btn {
+  display: block;
+}
+
+#op5:checked ~ .faq__answer-wrap--five {
+  max-height: 10rem;
+}
+#op5:checked ~ .faq__question--five .faq__label {
+  font-weight: 700;
+  color: var(--clr-base-dk);
+}
+#op5:checked ~ .faq__question--five .faq__label i {
+  transform: rotate(180deg);
+}
+#op5:checked ~ .faq__question--five .faq__hide-btn {
+  display: block;
 }
