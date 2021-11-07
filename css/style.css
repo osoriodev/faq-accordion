@@ -74,6 +74,8 @@ a {
   transform: translate(-50%, -60%);
 }
 .faq__info {
+  position: relative;
+  padding-block-end: 29.5rem;
   text-align: center;
 }
 .faq__title {
@@ -85,6 +87,7 @@ a {
 }
 .faq__form {
   width: 100%;
+  position: absolute;
 }
 .faq__option,
 .faq__box-img {
@@ -106,6 +109,7 @@ a {
   letter-spacing: -.04rem;
   color: var(--clr-base);
   cursor: pointer;
+  transition: color .2s ease-in-out;
 }
 .faq__label i {
   width: 1rem;
@@ -210,4 +214,66 @@ a {
 }
 #op5:checked ~ .faq__question--five .faq__hide-btn {
   display: block;
+}
+/* ========== MEDIA QUERIES ========== */
+@media (min-width: 64em) {
+  .main-section {
+    padding: 0;
+  }
+  .faq {
+    width: 92rem;
+    max-width: none;
+    min-height: 51rem;
+    margin-inline-start: 4.2rem;
+    padding: 6.5rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+    background-image: url('../img/bg-pattern-desktop.svg');
+    background-position: -57.7rem -29.5rem;
+    background-size: 96.6rem auto;
+  }
+  .faq__illustration {
+    width: 47rem;
+    top: 50%;
+    left: 0;
+    transform: translate(-17.5%, -51.5%);
+  }
+  .faq__info {
+    max-width: 35rem;
+    padding: 0;
+    position: initial;
+    grid-column-start: 2;
+    text-align: start;
+  }
+  .faq__title {
+    margin-block-end: 4rem;
+  }
+  .faq__form {
+    position: initial;
+  }
+  .faq__box-img {
+    width: 19rem;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: -9.2rem;
+    transition: transform .2s ease-in-out;
+  }
+  .faq__question {
+    margin-block-end: 1.6rem;
+  }
+  .faq__label {
+    padding-inline-end: 1.6rem;
+    letter-spacing: initial;
+  }
+  .faq__answer-wrap {
+    margin-block-end: 1.6rem;
+  }
+  .faq__answer {
+    padding-block-end: 1.6rem;
+  }
+  .faq__option:checked ~ .faq__box-img {
+    transform: translateX(-3.5rem);
+  }
 }
