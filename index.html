@@ -14,17 +14,19 @@
   <body>
     <main class="main-section">
       <article class="faq">
-        <picture class="faq__illustration">
-          <source srcset="./img/illustration-woman-online-desktop.svg" media="(min-width: 64em)">
-          <img src="./img/illustration-woman-online-mobile.svg" alt="Woman online illustration">
-        </picture>
+        <div class="faq__illustration-wrap">
+          <picture class="faq__illustration">
+            <source srcset="./img/illustration-woman-online-desktop.svg" media="(min-width: 64em)">
+            <img src="./img/illustration-woman-online-mobile.svg" alt="Woman online illustration">
+          </picture>
+        </div>
         <div class="faq__info">
           <h1 class="faq__title">Faq</h1>
 
           <form class="faq__form">
 
             <input class="faq__option" type="radio" name="op" id="op1">
-            <input class="faq__option" type="radio" name="op" id="op2">
+            <input class="faq__option" type="radio" name="op" id="op2" checked>
             <input class="faq__option" type="radio" name="op" id="op3">
             <input class="faq__option" type="radio" name="op" id="op4">
             <input class="faq__option" type="radio" name="op" id="op5">
