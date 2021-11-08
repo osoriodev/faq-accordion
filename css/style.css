@@ -278,7 +278,7 @@ a {
   .faq__answer {
     padding-block-end: 1.6rem;
   }
-  /* .faq__option:checked ~ .faq__box-img {
+  .faq__option:checked ~ .faq__box-img {
     transform: translateX(-3.5rem);
-  } */
+  }
 }
